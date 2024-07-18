@@ -1,0 +1,24 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: action_despedida
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Alegrarse cada vez que el usuario este feliz
+  steps: 
+  - intent: estado_feliz
+  - action: utter_feliz
+
+
+- rule: Intentar animar cada vez que el usuario este triste
+  steps:
+  - intent: mood_unhappy
+  - action: utter_ayuda

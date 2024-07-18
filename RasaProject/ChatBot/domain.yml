@@ -1,0 +1,100 @@
+version: "3.1"
+
+intents:
+  - saludo
+  - goodbye
+  - affirm
+  - deny
+  - estado_feliz
+  - mood_unhappy
+  - bot_challenge
+  - final_aprobado
+  - materias_enCurso
+  - finales_aprobados
+  - finalPrimerAnio
+  - finalSegundoAnio
+  - finalTercerAnio
+  - anioMateria
+  - presentacion
+  - estudias?
+  - usuarioEstudia
+  - usuarioNoEstudia
+  - usuarioTrabaja
+  - teGustaEstudiar?
+  - gustaOcupacion
+
+entities: 
+  - materia
+  - nombrePersona
+  - ocupacion
+
+actions: 
+  - action_finalAprobado
+  - action_materiasEnCurso
+  - action_finalesAprobados
+  - action_finalesAprobadosAnio
+  - action_anioMateria
+  - action_Presentacion
+  - action_despedida
+  - action_ocupacion
+  - action_gustarOcupacion
+
+slots:
+  name: 
+    type: text
+    mappings:
+    - type: from_entity
+      entity: materia
+  name2:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: nombrePersona
+  ocup:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: ocupacion
+    
+
+responses:
+  utter_saludo:
+  - text: "Buenas, con quien hablo??"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_feliz:
+  - text: "Buenisimo, me alegro!! :)"
+
+  utter_goodbye:
+  - text: "Nos vemoss"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_que_estudio:
+  - text: "Sisi, Estoy estudiando Ingenieria de sistemas en UNICEN"
+
+  utter_estudias??:
+  - text: "Vos tambien sos estudiante??"
+
+  utter_trabajas?:
+  - text: "Estas trabajando entonces??"
+
+  utter_meGustaCarrera: 
+  - text: "Sisi, por suerte me esta gustando"
+
+  utter_comoEstas??:
+  - text: "Como va todo?"
+
+  utter_ayuda:
+  - text: "Uhuh, mal ahi. Espero que te sientas mejor pronto"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

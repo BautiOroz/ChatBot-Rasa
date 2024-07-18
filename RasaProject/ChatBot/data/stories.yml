@@ -1,0 +1,95 @@
+version: "3.1"
+
+stories:
+
+
+
+- story: saludo promedio
+  steps: 
+  - intent: saludo
+  - action: utter_saludo
+  - intent: presentacion
+  - action: action_Presentacion
+  - action: utter_comoEstas??
+  - intent: estado_feliz
+  - action: utter_feliz
+
+
+- story: saludo triste
+  steps: 
+  - intent: saludo
+  - action: utter_saludo
+  - intent: presentacion
+  - action: action_Presentacion
+  - action: utter_comoEstas??
+  - intent: mood_unhappy
+  - action: utter_ayuda
+  
+
+
+
+- story: path_estudio1
+  steps: 
+  - intent: estudias?
+  - action: utter_que_estudio
+  - action: utter_estudias??
+  - intent: usuarioEstudia
+  - action: action_ocupacion
+
+
+- story: path_trabaja
+  steps: 
+  - intent: estudias?
+  - action: utter_que_estudio
+  - action: utter_estudias??
+  - intent: usuarioNoEstudia
+  - action: utter_trabajas?
+  - intent: usuarioTrabaja
+  - action: action_ocupacion
+
+
+
+- story: path_LeGustaOcupacion
+  steps: 
+  - intent: teGustaEstudiar?
+  - action: utter_meGustaCarrera
+  - action: action_gustarOcupacion
+  - intent: gustaOcupacion
+  - action: utter_feliz
+
+
+
+- story: comprobacionFinalAprobado
+  steps:
+  - intent: final_aprobado
+  - action: action_finalAprobado
+  - intent: anioMateria
+  - action: action_anioMateria
+
+
+- story: materiasQueCurso
+  steps: 
+  - intent: materias_enCurso
+  - action: action_materiasEnCurso
+
+- story: finalesQueAprobe
+  steps:
+  - intent: finales_aprobados
+  - action: action_finalesAprobados
+
+- story: finalesPrimero
+  steps: 
+  - intent: finalPrimerAnio
+  - action: action_finalesAprobadosAnio
+
+- story: finalesSegundo
+  steps: 
+  - intent: finalSegundoAnio
+  - action: action_finalesAprobadosAnio
+
+
+- story: finalesTercero
+  steps: 
+  - intent: finalTercerAnio
+  - action: action_finalesAprobadosAnio
+

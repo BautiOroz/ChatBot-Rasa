@@ -1,0 +1,236 @@
+version: "3.1"
+
+nlu:
+- intent: saludo
+  examples: |
+    - hola
+    - buenas
+    - como va todo?
+    - buenos dias
+    - buenas tardes
+    - buenas noches
+    - que onda?
+    
+
+- intent: goodbye
+  examples: |
+    - nos vemos
+    - chau
+    - adios
+    - que tengas un buen dia
+    - que tengas una buena tarde
+    - que tengas una buena noche
+    - hasta la proxima
+    
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: estado_feliz
+  examples: |
+    - perfecto
+    - increible
+    - bien
+    - bastante bien
+    - contento
+    - feliz
+    - me siento bien
+    - estoy muy bien
+    - estoy joya
+  
+
+- intent: mood_unhappy
+  examples: |
+    - estoy medio bajon
+    - mas o menos
+    - ahi andamos
+    - estoy un poco triste
+    - no estoy bien
+    - me siento mal
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+
+- intent: final_aprobado
+  examples: |
+    - aprobaste el final de [programacionI](materia)?
+    - diste el final de [programacionI](materia)?
+    - rendiste el final de [programacionI](materia)?
+    - tenes aprobado el final de [programacionI](materia)?
+    - aprobaste el final de [algebraI](materia)?
+    - aprobaste el final de [algebraLineal](materia)?
+    - aprobaste el final de [analisisMatematicoI](materia)?
+    - aprobaste el final de [quimica](materia)?
+    - aprobaste el final de [cienciasDeLaComputacionI](materia)?
+    - aprobaste el final de [fisicaGeneral](materia)?
+    - aprobaste el final de [programacionII](materia)?
+    - aprobaste el final de [idioma](materia)?
+    - aprobaste el final de [matematicaDiscreta](materia)?
+    - aprobaste el final de [algoritmosI](materia)?
+    - aprobaste el final de [cienciasDeLaComputacionII](materia)?
+    - aprobaste el final de [introduccionALaArquitecturaDeSistemas](materia)?
+    - aprobaste el final de [analisisMatematicoII](materia)?
+    - aprobaste el final de [electricidadYMagnetismo](materia)?
+    - aprobaste el final de [algoritmosII](materia)?
+    - aprobaste el final de [comunicacionDeDatosI](materia)?
+    - aprobaste el final de [probabilidadYEstadistica](materia)?
+    - aprobaste el final de [programacionOrientadaObjetos](materia)?
+    - aprobaste el final de [estructuraDeAlmacenamientoDeDatos](materia)?
+    - aprobaste el final de (materia)?
+    
+    
+
+
+
+- intent: materias_enCurso
+  examples: |
+    - que materias estas cursando?
+    - que cursas?
+    - que materias cursas este cuatrimestre?
+    - cuales materias estas cursando?
+    
+
+- intent: finales_aprobados
+  examples: |
+    - que finales aprobaste?
+    - cuales finales tenes aprobados?
+    - tenes finales aprobados?
+    - aprobaste algun final?
+
+
+- intent: finalPrimerAnio
+  examples: |
+    - que finales son de primero?
+    - algun final es de primero?
+    - tenes aprobado alguno de primer anio?
+    - es de primero alguno?
+    - cuales son del primer anio?
+    - y que finales tenes aprobados de primero?
+
+
+- intent: finalSegundoAnio
+  examples: |
+    - que finales son de segundo?
+    - algun final es de segundo?
+    - tenes aprobado alguno de segundo anio?
+    - es de segundo alguno?
+    - cuales son del segundo anio?
+    - y que finales tenes aprobados de segundo?
+
+
+- intent: finalTercerAnio
+  examples: |
+    - que finales son de tercero?
+    - algun final es de tercero?
+    - tenes aprobado alguno de tercer anio?
+    - es de tercero alguno?
+    - cuales son del tercer anio?
+    - y que finales tenes aprobados de tercero?
+
+- intent: anioMateria
+  examples: |
+    - de que anio es el final?
+    - ese final de que anio es?
+    - a que anio pertenece el final?
+    - anio?
+
+- intent: presentacion
+  examples: |
+    - mi nombre es [Bautista](nombrePersona)
+    - [Bautista](nombrePersona)
+    - me llamo [Bautista](nombrePersona)
+    - con [Bautista]nombrePersona)
+    - yo soy [Bautista](nombrePersona)
+    - estas hablando con [Bautista](nombrePersona)
+    - me llamo [juan](nombrePersona)
+    - me llamo [mateo](nombrePersona)
+    - me llamo [nicolas](nombrePersona)
+    - me llamo [franco](nombrePersona)
+    - me llamo [alejandro](nombrePersona)
+    - me llamo [agustina](nombrePersona)
+    - me llamo [analia](nombrePersona)
+    - me llamo [juliana](nombrePersona)
+    - me llamo [martina](nombrePersona)
+    - me llamo [micaela](nombrePersona)
+    - me llamo [delfina](nombrePersona)
+    
+- intent: estudias?
+  examples: |
+    - estas estudiando??
+    - estudias algo??
+    - sos estudiante??
+    - estas con alguna carrera?
+    - vas a la universidad?
+
+- intent: usuarioEstudia
+  examples: |
+    - sisi, yo tambien [estudio](ocupacion)
+    - [estudio](ocupacion) algo
+    - actualmente estoy [estudiando](ocupacion)
+    - yo tambien soy [estudiante](ocupacion)
+    - yo voy a la [universidad](ocupacion)
+    - si soy [estudiante](ocupacion)
+    
+
+- intent: usuarioNoEstudia
+  examples: |
+    - yo no estudio
+    - ya estudie
+    - ya me gradue
+    - yo ya me recibi
+    - no estoy estudiando
+
+- intent: usuarioTrabaja
+  examples: |
+    - estoy [trabajando](ocupacion)
+    - si, yo estoy [trabajando](ocupacion)
+    - yo [trabajo](ocupacion) si
+    - estoy [laburando](ocupacion) yo
+    - claro, yo [trabajo](ocupacion)
+
+- intent: teGustaEstudiar?
+  examples: |
+    - te gusta lo que estudias?
+    - te gusta tu carrera?
+    - te convence lo que elegiste para estudiar?
+    - te esta gustando lo que estudias?
+    - estas conforme con tu carrera?
+
+- intent: gustaOcupacion
+  examples: |
+    - Si me gusta bastante
+    - me gusta mucho
+    - esta bastante bien
+    - me convence
+    - me esta gustando 
+    - por suerte si
+
+- regex: materia
+  examples: |
+    - (([aA-zZ]\w+ *){1,})
+
+- regex: nombrePersona
+  examples: |
+    - (([aA-zZ]\w+ *){1,})
